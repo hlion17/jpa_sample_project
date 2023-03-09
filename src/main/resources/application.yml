@@ -1,0 +1,23 @@
+spring:
+  jpa:
+    properties:
+      hibernate:
+        format_sql: true
+        show_sql: true
+        hbm2ddl:
+          auto: none
+    hibernate:
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    database-platform: org.hibernate.dialect.MariaDB103Dialect
+
+  datasource:
+    url: jdbc:mariadb://${DB_HOST}:${DB_PORT}/${DB_NAME}
+    driver-class-name: org.mariadb.jdbc.Driver
+    hikari:
+      username: ENC(XktLxm8S70xumtYAOUwy9pRdyf3D0ZOk)
+      password: ENC(zmKRPWGY2ZRzy8r2EEGXSCC+N6eWhX9/)
+
+jasypt:
+  encryptor:
+    bean: jasyptStringEncryptor

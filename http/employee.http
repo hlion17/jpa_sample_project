@@ -1,0 +1,7 @@
+// 사용자(Employee) 조회 API
+
+### 1. 모든 사용자 조회
+GET {{host}}/api/v1/employees/all
+
+### 2. 특정 사용자 조회
+GET {{host}}/api/v1/employees/1056
